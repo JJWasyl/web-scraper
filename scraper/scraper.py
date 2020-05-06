@@ -98,7 +98,7 @@ class GoogleImagesScraper:
             except Exception as e:
                 print(f"ERROR - Could not download {url} try {i+1}/{max_tries} - {e}")
                 if i+1 < max_tries:
-                    time.sleep(5)
+                    time.sleep(1)
                 continue
             break
 
@@ -141,4 +141,4 @@ def search_and_download_opera(search_term: str, executable_path: str, target_pat
 if __name__ == "__main__":
     search_term = "Dariusz Wasylkowski"
     exec_path = r"C:\Users\jjwas\AppData\Local\Programs\Opera\68.0.3618.63\opera.exe"
-    search_and_download_opera(search_term, exec_path, r"./experiments", 5)
+    search_and_download_opera(search_term, exec_path, r"./experiments", 10)
