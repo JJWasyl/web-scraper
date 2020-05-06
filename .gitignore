@@ -1,0 +1,8 @@
+# IDE
+.idea/
+
+# Experiments
+experiments/
+
+# Drivers
+operadriver.exe
